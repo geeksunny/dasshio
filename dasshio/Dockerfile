@@ -1,5 +1,7 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+ARG BUILD_FROM=ghcr.io/home-assistant/base:latest
+ARG BUILD_VERSION=0.3.8-1
+
+FROM ${BUILD_FROM}
 
 ENV LANG C.UTF-8
 
